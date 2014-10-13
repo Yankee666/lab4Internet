@@ -25,6 +25,7 @@ int main(){
     Initialize(H);
     printf("数据规模\n");
     printf("git in B1");
+     printf("git in B3");
     scanf("%d",&n);
     start = clock();
     for(i = 1;i<=n;i++){
