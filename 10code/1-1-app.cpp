@@ -26,6 +26,7 @@ int main(){
     H = new HEAP;
     Initialize(H);
     printf("'1' to start or continue and '-1'to stop\n");
+    printf("haha");
     scanf("%d",&stop);
     while(stop>0){
         printf("Input the Fruit\n");
