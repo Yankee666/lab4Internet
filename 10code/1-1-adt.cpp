@@ -23,7 +23,8 @@ int main(){
     Elementtype max;
     H = new HEAP;
     Initialize(H);
-    printf("Êı¾İ¹æÄ£\n");
+    printf("æ•°æ®è§„æ¨¡\n");
+    printf("git in B1");
     scanf("%d",&n);
     start = clock();
     for(i = 1;i<=n;i++){
@@ -36,7 +37,7 @@ int main(){
         //printf(" %d ",max.data);
     }
     end = clock();
-    printf("\nºÄÊ±£º%d ms",end - start);
+    printf("\nè€—æ—¶ï¼š%d ms",end - start);
     return 0;
 }
 void Initialize(HEAP *H){
@@ -62,7 +63,7 @@ Elementtype DeleteMax(HEAP *H){
         temp = H->elements[H->n--];
         while(child<=H->n){
             if((child<H->n)&&(H->elements[child].data<H->elements[child+1].data))
-                child++;//Ñ°ÕÒ½Ï´ó¶ù×Ó±àºÅ2or3
+                child++;//å¯»æ‰¾è¾ƒå¤§å„¿å­ç¼–å·2or3
             if(temp.data>H->elements[child].data)break;
             H->elements[parent]= H->elements[child];
             H->elements[child].data = 0;
